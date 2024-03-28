@@ -1,5 +1,6 @@
 from flask import Flask, request
 import urllib.parse
+import json  # Import the json module
 
 app = Flask(__name__)
 
@@ -25,8 +26,8 @@ def webhook():
           print(json.dumps(data, indent=4))  # Pretty print JSON data
         except json.JSONDecodeError:
           print("Error: Could not parse payload as JSON")
-      except urllib.parse.ParseResult:
-        print("Error: Could not decode payload")
+      except Exception as e:  # Catch any exceptions (better practice)
+        print(f"Error: {e}")
     else:
       print("Error: Missing 'payload' parameter")
       return "Missing 'payload' parameter", 400  # Bad request
