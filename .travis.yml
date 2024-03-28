@@ -1,14 +1,15 @@
 language: generic
-
+deploy:
+install:
+before_script:
 script:
-  - ls -la
 
 notifications:
   webhooks:
     urls:
-      - https://stale-ducks-speak.loca.lt/travis
-    on_success: always # default: always
-    on_failure: always # default: always
-    on_start:   never # default: never
-    on_cancel:  never # default: always
-    on_error:   always # default: always ?
+      - https://atlas.valven.com
+    on_success: always
+    on_failure: always
+    on_start:   never
+    on_cancel:  never
+    on_error:   never
