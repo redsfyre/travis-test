@@ -3,7 +3,7 @@ import urllib.parse
 
 app = Flask(__name__)
 
-@app.route("/", methods=["POST"])
+@app.route("/travis", methods=["POST"])
 def webhook():
   # Check if the request content type is URL-encoded form
   if request.content_type == "application/x-www-form-urlencoded":
