@@ -9,7 +9,7 @@ notifications:
     on_failure: always # default: always
     on_start:   never # default: never
     on_cancel:  never # default: always
-    on_error:   always # default: always
+    on_error:   never # default: always
 ```
 
 Please refer to the Travis CI documentation for more information about the webhook, payload and validating the webhook signature.
