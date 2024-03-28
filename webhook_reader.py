@@ -1,20 +1,39 @@
 from flask import Flask, request
-import json
+import urllib.parse
 
 app = Flask(__name__)
 
-@app.route("/travis", methods=["POST"])
+@app.route("/", methods=["POST"])
 def webhook():
-  # Check if the request has JSON data
-  if request.is_json:
-    # Get the JSON data
-    data = request.get_json()
-    print("Webhook request received!")
-    # Pretty print the JSON data for better readability
-    print(json.dumps(data, indent=4))
+  # Check if the request content type is URL-encoded form
+  if request.content_type == "application/x-www-form-urlencoded":
+    # Get the form data
+    form = request.form
+    
+    # Check if 'payload' parameter exists
+    if 'payload' in form:
+      # Get the encoded payload
+      encoded_payload = form['payload']
+      
+      # Decode the payload (URL-decode)
+      try:
+        payload = urllib.parse.unquote_plus(encoded_payload)
+        print("Webhook request received!")
+        # Assuming the payload is JSON, try parsing it
+        try:
+          data = json.loads(payload)
+          print(json.dumps(data, indent=4))  # Pretty print JSON data
+        except json.JSONDecodeError:
+          print("Error: Could not parse payload as JSON")
+      except urllib.parse.ParseResult:
+        print("Error: Could not decode payload")
+    else:
+      print("Error: Missing 'payload' parameter")
+      return "Missing 'payload' parameter", 400  # Bad request
+
   else:
-    print("Request is not JSON format")
-    return "Please send JSON data", 400  # Bad request
+    print("Request content type is not application/x-www-form-urlencoded")
+    return "Unsupported content type", 415  # Unsupported media type
 
   return "Success", 200
 
