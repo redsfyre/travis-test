@@ -1,0 +1,90 @@
+{
+    "id": 269728022,
+    "number": "17",
+    "config": {
+        "language": "generic",
+        "os": [
+            "linux"
+        ],
+        "dist": "xenial",
+        "deploy": [],
+        "install": [],
+        "before_script": [],
+        "script": [],
+        "notifications": {
+            "webhooks": [
+                {
+                    "urls": [
+                        "https://stale-ducks-speak.loca.lt/travis"
+                    ],
+                    "on_success": "always",
+                    "on_failure": "always",
+                    "on_start": "never",
+                    "on_cancel": "never",
+                    "on_error": "never"
+                }
+            ]
+        }
+    },
+    "type": "pull_request",
+    "state": "passed",
+    "status": 0,
+    "result": 0,
+    "status_message": "Passed",
+    "result_message": "Passed",
+    "started_at": "2024-03-29T08:19:39Z",
+    "finished_at": "2024-03-29T08:20:09Z",
+    "duration": 30,
+    "build_url": "https://app.travis-ci.com/redsfyre/travis-test/builds/269728022",
+    "commit_id": 1004063092,
+    "commit": "cb1f883c01a405bc19d2a886e0ce1b23aa8ff103",
+    "base_commit": "e0f56920fba832eff0f82eeed625d065c2c18e22",
+    "head_commit": "0c61896bd19700853e4094617b08f1be283298d4",
+    "branch": "main",
+    "message": "pr preparation",
+    "compare_url": "https://github.com/redsfyre/travis-test/pull/1",
+    "committed_at": "2024-03-29T08:17:20Z",
+    "author_name": "Yasin Isa YILDIRIM",
+    "author_email": "yasin.yildirim@faraday.net",
+    "committer_name": "Yasin Isa YILDIRIM",
+    "committer_email": "yasin.yildirim@faraday.net",
+    "pull_request": true,
+    "pull_request_number": 1,
+    "pull_request_title": "PR #1",
+    "tag": null,
+    "repository": {
+        "id": 27022443,
+        "name": "travis-test",
+        "owner_name": "redsfyre",
+        "url": null
+    },
+    "matrix": [
+        {
+            "id": 619888729,
+            "repository_id": 27022443,
+            "parent_id": 269728022,
+            "number": "17.1",
+            "state": "passed",
+            "config": {
+                "os": "linux",
+                "language": "generic",
+                "dist": "xenial"
+            },
+            "status": 0,
+            "result": 0,
+            "commit": "cb1f883c01a405bc19d2a886e0ce1b23aa8ff103",
+            "branch": "main",
+            "message": "pr preparation",
+            "compare_url": "https://github.com/redsfyre/travis-test/pull/1",
+            "started_at": "2024-03-29T08:19:39Z",
+            "finished_at": "2024-03-29T08:20:09Z",
+            "committed_at": "2024-03-29T08:17:20Z",
+            "author_name": "Yasin Isa YILDIRIM",
+            "author_email": "yasin.yildirim@faraday.net",
+            "committer_name": "Yasin Isa YILDIRIM",
+            "committer_email": "yasin.yildirim@faraday.net",
+            "allow_failure": null
+        }
+    ]
+}
+

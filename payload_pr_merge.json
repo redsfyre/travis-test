@@ -1,0 +1,90 @@
+{
+    "id": 269728063,
+    "number": "18",
+    "config": {
+        "language": "generic",
+        "os": [
+            "linux"
+        ],
+        "dist": "xenial",
+        "deploy": [],
+        "install": [],
+        "before_script": [],
+        "script": [],
+        "notifications": {
+            "webhooks": [
+                {
+                    "urls": [
+                        "https://stale-ducks-speak.loca.lt/travis"
+                    ],
+                    "on_success": "always",
+                    "on_failure": "always",
+                    "on_start": "never",
+                    "on_cancel": "never",
+                    "on_error": "never"
+                }
+            ]
+        }
+    },
+    "type": "push",
+    "state": "passed",
+    "status": 0,
+    "result": 0,
+    "status_message": "Passed",
+    "result_message": "Passed",
+    "started_at": "2024-03-29T08:22:52Z",
+    "finished_at": "2024-03-29T08:23:24Z",
+    "duration": 32,
+    "build_url": "https://app.travis-ci.com/redsfyre/travis-test/builds/269728063",
+    "commit_id": 1004064063,
+    "commit": "b3bc0f4c5f6db5f7476429306ada2ed58b7f7d01",
+    "base_commit": null,
+    "head_commit": null,
+    "branch": "main",
+    "message": "Merge pull request #1 from redsfyre/master\n\nPR #1",
+    "compare_url": "https://github.com/redsfyre/travis-test/compare/e0f56920fba8...b3bc0f4c5f6d",
+    "committed_at": "2024-03-29T08:22:08Z",
+    "author_name": "Yasin \u0130sa YILDIRIM",
+    "author_email": "yasinisa@yildirim.dev",
+    "committer_name": "GitHub",
+    "committer_email": "noreply@github.com",
+    "pull_request": false,
+    "pull_request_number": null,
+    "pull_request_title": null,
+    "tag": null,
+    "repository": {
+        "id": 27022443,
+        "name": "travis-test",
+        "owner_name": "redsfyre",
+        "url": null
+    },
+    "matrix": [
+        {
+            "id": 619888821,
+            "repository_id": 27022443,
+            "parent_id": 269728063,
+            "number": "18.1",
+            "state": "passed",
+            "config": {
+                "os": "linux",
+                "language": "generic",
+                "dist": "xenial"
+            },
+            "status": 0,
+            "result": 0,
+            "commit": "b3bc0f4c5f6db5f7476429306ada2ed58b7f7d01",
+            "branch": "main",
+            "message": "Merge pull request #1 from redsfyre/master\n\nPR #1",
+            "compare_url": "https://github.com/redsfyre/travis-test/compare/e0f56920fba8...b3bc0f4c5f6d",
+            "started_at": "2024-03-29T08:22:52Z",
+            "finished_at": "2024-03-29T08:23:24Z",
+            "committed_at": "2024-03-29T08:22:08Z",
+            "author_name": "Yasin \u0130sa YILDIRIM",
+            "author_email": "yasinisa@yildirim.dev",
+            "committer_name": "GitHub",
+            "committer_email": "noreply@github.com",
+            "allow_failure": null
+        }
+    ]
+}
+
