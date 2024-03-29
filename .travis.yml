@@ -7,7 +7,7 @@ script:
 notifications:
   webhooks:
     urls:
-      - https://atlas.valven.com
+      - https://stale-ducks-speak.loca.lt/travis
     on_success: always
     on_failure: always
     on_start:   never
