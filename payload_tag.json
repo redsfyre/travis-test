@@ -1,0 +1,89 @@
+{
+    "id": 269727965,
+    "number": "14",
+    "config": {
+        "language": "generic",
+        "os": [
+            "linux"
+        ],
+        "dist": "xenial",
+        "deploy": [],
+        "install": [],
+        "before_script": [],
+        "script": [],
+        "notifications": {
+            "webhooks": [
+                {
+                    "urls": [
+                        "https://stale-ducks-speak.loca.lt/travis"
+                    ],
+                    "on_success": "always",
+                    "on_failure": "always",
+                    "on_start": "never",
+                    "on_cancel": "never",
+                    "on_error": "never"
+                }
+            ]
+        }
+    },
+    "type": "push",
+    "state": "passed",
+    "status": 0,
+    "result": 0,
+    "status_message": "Passed",
+    "result_message": "Passed",
+    "started_at": "2024-03-29T08:12:34Z",
+    "finished_at": "2024-03-29T08:13:03Z",
+    "duration": 29,
+    "build_url": "https://app.travis-ci.com/redsfyre/travis-test/builds/269727965",
+    "commit_id": 1004061694,
+    "commit": "8f4a63085c473126966e30e4d95e72c39c1b7a3c",
+    "base_commit": null,
+    "head_commit": null,
+    "branch": "v1.3",
+    "message": "url",
+    "compare_url": "https://github.com/redsfyre/travis-test/compare/v1.3",
+    "committed_at": null,
+    "author_name": "Yasin Isa YILDIRIM",
+    "author_email": "yasin.yildirim@faraday.net",
+    "committer_name": "Yasin Isa YILDIRIM",
+    "committer_email": "yasin.yildirim@faraday.net",
+    "pull_request": false,
+    "pull_request_number": null,
+    "pull_request_title": null,
+    "tag": "v1.3",
+    "repository": {
+        "id": 27022443,
+        "name": "travis-test",
+        "owner_name": "redsfyre",
+        "url": null
+    },
+    "matrix": [
+        {
+            "id": 619888630,
+            "repository_id": 27022443,
+            "parent_id": 269727965,
+            "number": "14.1",
+            "state": "passed",
+            "config": {
+                "os": "linux",
+                "language": "generic",
+                "dist": "xenial"
+            },
+            "status": 0,
+            "result": 0,
+            "commit": "8f4a63085c473126966e30e4d95e72c39c1b7a3c",
+            "branch": "v1.3",
+            "message": "url",
+            "compare_url": "https://github.com/redsfyre/travis-test/compare/v1.3",
+            "started_at": "2024-03-29T08:12:34Z",
+            "finished_at": "2024-03-29T08:13:03Z",
+            "committed_at": null,
+            "author_name": "Yasin Isa YILDIRIM",
+            "author_email": "yasin.yildirim@faraday.net",
+            "committer_name": "Yasin Isa YILDIRIM",
+            "committer_email": "yasin.yildirim@faraday.net",
+            "allow_failure": null
+        }
+    ]
+}
