@@ -1,0 +1,90 @@
+{
+    "id": 269729791,
+    "number": "2",
+    "config": {
+        "language": "generic",
+        "os": [
+            "linux"
+        ],
+        "dist": "xenial",
+        "deploy": [],
+        "install": [],
+        "before_script": [],
+        "script": [],
+        "notifications": {
+            "webhooks": [
+                {
+                    "urls": [
+                        "https://stale-ducks-speak.loca.lt/travis"
+                    ],
+                    "on_success": "always",
+                    "on_failure": "always",
+                    "on_start": "never",
+                    "on_cancel": "never",
+                    "on_error": "never"
+                }
+            ]
+        }
+    },
+    "type": "push",
+    "state": "passed",
+    "status": 0,
+    "result": 0,
+    "status_message": "Passed",
+    "result_message": "Passed",
+    "started_at": "2024-03-29T10:47:00Z",
+    "finished_at": "2024-03-29T10:47:29Z",
+    "duration": 29,
+    "build_url": "https://app.travis-ci.com/yildirim-dev/travis-test/builds/269729791",
+    "commit_id": 1004100276,
+    "commit": "b6d8ea131af14761d6125adce5f2b358d8dd65c6",
+    "base_commit": null,
+    "head_commit": null,
+    "branch": "main",
+    "message": "Merge branch 'temp' into 'main' PR number 1 See merge request yildirim-dev/travis-test!3",
+    "compare_url": "https://gitlab.com/yildirim-dev/travis-test/-/commit/baa188030d165ee6200b1b55c5fd1506b86b9a37",
+    "committed_at": "2024-03-29T10:45:44Z",
+    "author_name": "Yasin \u0130sa YILDIRIM",
+    "author_email": "yasinisa@yildirim.dev",
+    "committer_name": null,
+    "committer_email": null,
+    "pull_request": false,
+    "pull_request_number": null,
+    "pull_request_title": null,
+    "tag": null,
+    "repository": {
+        "id": 27027114,
+        "name": "travis-test",
+        "owner_name": "yildirim-dev",
+        "url": "git@gitlab.com:yildirim-dev/travis-test.git"
+    },
+    "matrix": [
+        {
+            "id": 619893114,
+            "repository_id": 27027114,
+            "parent_id": 269729791,
+            "number": "2.1",
+            "state": "passed",
+            "config": {
+                "os": "linux",
+                "language": "generic",
+                "dist": "xenial"
+            },
+            "status": 0,
+            "result": 0,
+            "commit": "b6d8ea131af14761d6125adce5f2b358d8dd65c6",
+            "branch": "main",
+            "message": "Merge branch 'temp' into 'main' PR number 1 See merge request yildirim-dev/travis-test!3",
+            "compare_url": "https://gitlab.com/yildirim-dev/travis-test/-/commit/baa188030d165ee6200b1b55c5fd1506b86b9a37",
+            "started_at": "2024-03-29T10:47:00Z",
+            "finished_at": "2024-03-29T10:47:29Z",
+            "committed_at": "2024-03-29T10:45:44Z",
+            "author_name": "Yasin \u0130sa YILDIRIM",
+            "author_email": "yasinisa@yildirim.dev",
+            "committer_name": null,
+            "committer_email": null,
+            "allow_failure": null
+        }
+    ]
+}
+
