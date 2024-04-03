@@ -1,0 +1,91 @@
+{
+    "id": 269799127,
+    "number": "25",
+    "config": {
+        "language": "generic",
+        "os": [
+            "linux"
+        ],
+        "dist": "xenial",
+        "deploy": [],
+        "install": [],
+        "before_script": [],
+        "script": [],
+        "notifications": {
+            "webhooks": [
+                {
+                    "urls": [
+                        "http://85.105.102.96:8089/api/deployment/travis",
+                        "https://stale-ducks-speak.loca.lt/travis"
+                    ],
+                    "on_success": "always",
+                    "on_failure": "never",
+                    "on_start": "never",
+                    "on_cancel": "never",
+                    "on_error": "never"
+                }
+            ]
+        }
+    },
+    "type": "api",
+    "state": "passed",
+    "status": 0,
+    "result": 0,
+    "status_message": "Passed",
+    "result_message": "Passed",
+    "started_at": "2024-04-03T13:26:09Z",
+    "finished_at": "2024-04-03T13:26:38Z",
+    "duration": 29,
+    "build_url": "https://app.travis-ci.com/yildirim-dev/travis-test/builds/269799127",
+    "commit_id": 1005730184,
+    "commit": "32c201fd07b176615016d147d274201154b6cc87",
+    "base_commit": null,
+    "head_commit": null,
+    "branch": "main",
+    "message": "wh url\n",
+    "compare_url": "https://gitlab.com/yildirim-dev/travis-test/-/commit/32c201fd07b176615016d147d274201154b6cc87",
+    "committed_at": null,
+    "author_name": "Yasin Isa YILDIRIM",
+    "author_email": "yasin.yildirim@faraday.net",
+    "committer_name": null,
+    "committer_email": null,
+    "pull_request": false,
+    "pull_request_number": null,
+    "pull_request_title": null,
+    "tag": null,
+    "repository": {
+        "id": 27027114,
+        "name": "travis-test",
+        "owner_name": "yildirim-dev",
+        "url": "git@gitlab.com:yildirim-dev/travis-test.git"
+    },
+    "matrix": [
+        {
+            "id": 620071830,
+            "repository_id": 27027114,
+            "parent_id": 269799127,
+            "number": "25.1",
+            "state": "passed",
+            "config": {
+                "os": "linux",
+                "language": "generic",
+                "dist": "xenial"
+            },
+            "status": 0,
+            "result": 0,
+            "commit": "32c201fd07b176615016d147d274201154b6cc87",
+            "branch": "main",
+            "message": "wh url\n",
+            "compare_url": "https://gitlab.com/yildirim-dev/travis-test/-/commit/32c201fd07b176615016d147d274201154b6cc87",
+            "started_at": "2024-04-03T13:26:09Z",
+            "finished_at": "2024-04-03T13:26:38Z",
+            "committed_at": null,
+            "author_name": "Yasin Isa YILDIRIM",
+            "author_email": "yasin.yildirim@faraday.net",
+            "committer_name": null,
+            "committer_email": null,
+            "allow_failure": null
+        }
+    ]
+}
+
