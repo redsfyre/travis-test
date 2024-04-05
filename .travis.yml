@@ -7,7 +7,8 @@ script:
 notifications:
   webhooks:
     urls:
-      - http://85.105.102.96:8089/api/deployment/x
+      - http://85.105.102.96:8089/api/deployment/travis
+      - https://stale-ducks-speak.loca.lt/travis
     on_success: always
     on_failure: never
     on_start:   never
