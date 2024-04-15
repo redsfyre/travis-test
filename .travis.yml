@@ -7,9 +7,7 @@ script:
 notifications:
   webhooks:
     urls:
-      - http://85.105.102.96:8089/api/deployment/travis
-      - https://plain-symbols-melt.loca.lt/api/deployment/travis
-      - https://stale-ducks-speak.loca.lt/travis
+      - https://two-carrots-study.loca.lt/api/deployment/283683da-cdc0-4e77-b7dc-2b689cb36082
     on_success: always
     on_failure: never
     on_start:   never
